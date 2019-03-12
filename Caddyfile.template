@@ -3,4 +3,10 @@ gzip
 header / Cache-Control "no-cache, no-store, must-revalidate"
 header / Pragma "no-cache"
 header / Expires "0"
+header /api {
+        Access-Control-Allow-Origin  *
+        Access-Control-Allow-Headers "origin, x-requested-with, content-type"
+        Access-Control-Allow-Methods "GET, POST, OPTIONS, PUT, DELETE"
+        -Server
+}
 
